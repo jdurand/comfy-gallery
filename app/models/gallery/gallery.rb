@@ -14,6 +14,6 @@ class Gallery::Gallery < ActiveRecord::Base
   validates :identifier,
     :presence   => true,
     :uniqueness => true,
-    :format     => { :with =>  /^\w[a-z0-9_-]*$/i }
+    :format     => { :with =>  /\A\w[a-z0-9_-]*\z/i, :multiline=>true }
     
 end
