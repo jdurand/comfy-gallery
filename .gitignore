@@ -11,3 +11,4 @@ db/dumps/
 log/*
 Gemfile.lock
 coverage/
+/nbproject/private/
