@@ -10,7 +10,7 @@ module ComfyGallery
         ComfyGallery.configure do |conf|
           conf.admin_route_prefix = "cms-admin" #ComfortableMexicanSofa.config.admin_route_prefix
           conf.upload_options     = ComfortableMexicanSofa.config.upload_file_options
-          conf.admin_controller   = 'CmsAdmin::BaseController'
+          conf.admin_controller   = 'Admin::Cms::BaseController'
           conf.form_builder       = 'ComfortableMexicanSofa::FormBuilder'
         end
         # applying nav elements
